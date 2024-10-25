@@ -5,28 +5,8 @@ GamepadToPC
 
 GamepadToPC est une application Python permettant de transformer un contrôleur de jeu Android en une manette de jeu virtuelle sur PC. Grâce à une communication UDP, l'application reçoit les entrées du contrôleur Android et les transmet à un serveur Python qui les interprète et les simule via vgamepad et ViGEmBus.
 
-Table des Matières
-Caractéristiques
-Fonctionnement
-Installation
-Prérequis
-Installation via l'Installateur
-Installation Manuelle
-Utilisation
-Dépannage
-Contribution
-Licence
-Remerciements
-Caractéristiques
-Connexion UDP : Communication sans fil entre votre appareil Android et le PC.
-Interface Graphique : Une interface utilisateur conviviale développée avec PyQt5.
-Manette Virtuelle : Simulation de manettes de jeu Xbox 360 via vgamepad et ViGEmBus.
-Installation Simplifiée : Installateur Windows professionnel créé avec Inno Setup.
-Logs en Temps Réel : Visualisation des entrées reçues et du statut du serveur directement dans l'interface.
-Fonctionnement
-Configuration :
 
-Connectez votre contrôleur de jeu Android au même réseau que votre PC.
+Connectez votre contrôleur de jeu (smartphone) Android au même réseau que votre PC.
 Lancez l'application sur votre Android et configurez-la pour envoyer les données au serveur Python.
 Serveur Python :
 
@@ -36,11 +16,14 @@ Manette Virtuelle :
 
 Les entrées sont transmises à vgamepad, qui simule une manette Xbox 360 via ViGEmBus.
 Les jeux et applications sur PC reconnaissent la manette virtuelle comme une manette physique standard.
+
+
 Installation
 Prérequis
 Système d'exploitation : Windows 10 ou supérieur.
 Python : Version 3.10.6
 ViGEmBus : Driver nécessaire pour la simulation de manettes virtuelles.
+
 Installation via l'Installateur
 L'installateur simplifie le processus d'installation en intégrant toutes les dépendances nécessaires.
 
@@ -62,7 +45,7 @@ Cloner le Dépôt :
 
 bash
 Copy code
-git clone https://github.com/votre-utilisateur/GamepadToPC.git
+git clone https://github.com/Snaaps/GamepadToPC.git
 cd GamepadToPC
 Installer les Dépendances Python : Assurez-vous d'avoir Python 3.10.6 installé. Ensuite, installez les packages requis :
 
@@ -117,18 +100,14 @@ Les contributions sont les bienvenues ! Pour contribuer à ce projet, veuillez s
 
 Fork le Dépôt
 Créer une Branche pour Votre Feature :
-bash
-Copy code
 git checkout -b feature/nom-de-votre-feature
+
 Committer Vos Changements :
-bash
-Copy code
 git commit -m "Ajout de ma nouvelle feature"
+
 Pousser vers la Branche :
-bash
-Copy code
 git push origin feature/nom-de-votre-feature
-Ouvrir une Pull Request
+
 Veuillez vous assurer que vos contributions respectent les standards de code du projet.
 
 Licence
